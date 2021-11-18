@@ -1,3 +1,7 @@
+::placeholder{
+  padding-left: 15px;
+}
+
 .flex{
   display: flex;
   justify-content: space-between;
