@@ -1,6 +1,7 @@
-::placeholder{
-  padding-left: 15px;
+input {
+  padding: 12px 20px;
 }
+
 
 .flex{
   display: flex;
@@ -24,10 +25,25 @@ nav ul li{
   margin-top: 20px;
   margin-left: 15px;
 }
-nav ul li a{
+.nav-title{
+  transition-property: all;
+  transition-duration: 0.1s;
+}
+.nav-title:hover{
+  padding-bottom: 8px;
+  margin-top: 30px;
+  border-bottom: 3px solid #FFE600;
+  border-collapse: separate;
+  border-spacing: 6px;
+  text-decoration: none;
+}
+
+.nav-title{
   text-decoration: none;
 }
 .active{
+  padding-bottom: 8px;
+  margin-top: 30px;
   border-bottom: 3px solid #FFE600;
   border-collapse: separate;
   border-spacing: 6px;
@@ -51,6 +67,13 @@ nav input{
   border-radius: 10px;
   margin-right: 100px;
   margin-top: 20px;
+  color: #f9f5f5;
+}
+nav input:hover{
+  border: 2px solid #FFE600CC;
+}
+nav input:focus{
+  border: 2px solid #FFE600CC;
 }
 nav input::placeholder{
   color: rgba(255, 255, 255, 0.541);
@@ -65,7 +88,6 @@ nav input::placeholder{
   font-size: 60px;
   color: #fff;
   text-align: center;
-
 }
 .title h2{
   font-size: 40px;
@@ -103,19 +125,23 @@ nav input::placeholder{
   justify-content: center;
 }
 .scrol-right span{
-  width: 30px;
-  height: 30px;
-  background-color: #69A44A;
-  opacity: 0.2;
+  width: 40px;
+  height: 40px;
+  background-color: #c7e7b661;
   margin-left: 50px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.scrol-right span img{
+  width: 15px;
+  height: 15px;
+}
 .scrol-right span:hover{
   opacity: 1;
   cursor: pointer;
+  background-color: #6cc140ad;
 }
 
 
@@ -146,7 +172,6 @@ nav input::placeholder{
 .description:hover{
   height: 180px;
   cursor: pointer;
-  overflow: visible;
 }
 .description h4{
   font-size: 16px;
@@ -167,7 +192,9 @@ nav input::placeholder{
   font-weight: bold;
   color: #FFE600;
 }
-
+.donate{
+  min-height: 600px;
+}
 .donate-head{
   width: 100%;
   height: 70px;
@@ -234,6 +261,7 @@ nav input::placeholder{
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
+  box-shadow: 1px 0px 20px 0px #765b5b;
 
 }
 .protest-wrapper{
@@ -244,27 +272,37 @@ nav input::placeholder{
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 15px;
+  box-shadow: -1px 0px 20px 0px #c5c5c5;
 }
 .protest-wrapper h1{
-  width: 255px;
+  width: 400px;
   font-size: 25px;
   font-weight: bolder;
   color: gray;
+  line-height: 30px;
 }
 .protest-wrapper p{
   font-size: 15px;
     text-align: center;
-    width: 290px;
     margin-top: 11px;
     padding-bottom: 40px;
+    line-height: 20px;
 }
 .protest-wrapper input{
   height: 40px;
-  width: 200px;
+  width: 250px;
   outline: none;
   border-style: none;
   border-radius: 10px;
   margin-top: 10px;
+  color: gray;
+}
+.protest-wrapper input:hover{
+  border: 1px solid #69a44a;
+}
+.protest-wrapper input:focus{
+  border: 1px solid #69a44a;
 }
 .protest-wrapper input::placeholder{
   color: #cfcfcf;
@@ -278,8 +316,14 @@ nav input::placeholder{
     border-style: none;
     border-radius: 10px;
     margin-top: 10px;
-    color: #fff;
+    color: #f3fbb1;
     cursor: pointer;
+    transition: all;
+    transition-duration: 0.2s;
+}
+.protest-wrapper button:hover{
+    width: 200px;
+    color: #fff;
 }
 
 
@@ -329,6 +373,13 @@ nav input::placeholder{
     border-style: none;
     border-radius: 10px;
     margin-top: 10px;
+    color: gray;
+}
+form input:hover{
+  border: 1px solid #69a44a;
+}
+form input:focus{
+  border: 2px solid #69a44a;
 }
 .recover form button{
   height: 40px;
@@ -338,8 +389,14 @@ nav input::placeholder{
     border-style: none;
     border-radius: 10px;
     margin-top: 10px;
-    color: #fff;
+    color: #f3fbb1;
     cursor: pointer;
+    transition:all;
+    transition-duration: 0.2s;
+}
+.recover form button:hover{
+    width: 200px;
+    color: #fff;
 }
 
 .subscribe-us{
@@ -448,6 +505,7 @@ nav input::placeholder{
      align-self: center;
      font-weight: bold;
      color: #FFFFFF;
+     line-height: 60px;
 }
 .donation-content{
   width: 40%;
@@ -499,8 +557,16 @@ nav input::placeholder{
   outline: none;
   border-radius: 10px;
   border-style: none;
-  border: 1px solid gray;
+  border: 1px solid #69a44a;
+  color: gray;
 }
+.donation-cash input:hover{
+  border: 2px solid #69a44a;
+}
+.donation-cash input:focus{
+  border: 2px solid #69a44a;
+}
+
 
 .donation-cash input::placeholder{
   color: gray;
@@ -527,9 +593,6 @@ nav input::placeholder{
   height: 100%;
   position: absolute;
   border-radius: 10px;
-}
-.mail-box input::placeholder{
-  padding-left: 20px;
 }
 .mail-send{
   width: 17%;
@@ -577,10 +640,16 @@ nav input::placeholder{
 }
 .footer-box a h4{
   color: #fff;
-  font-size: 13px;
+  font-size: 15px;
+}
+.footer-box a h4:hover{
+  color: #FFE600;
 }
 .footer-box a p{
   font-size: 13px;
+}
+.footer-box a:hover{
+  color: #FFE600;
 }
 .media{
   margin-top: 20px;
@@ -588,6 +657,12 @@ nav input::placeholder{
 .media img{
   width: 20px;
   height: 20px;
+  transform: rotate(0deg);
+  transition-property: all;
+  transition-duration: 1s;
+}
+.media img:hover{
+  transform: rotate(360deg);
 }
 .logo1{
   width: 60px;
