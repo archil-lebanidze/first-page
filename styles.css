@@ -156,6 +156,7 @@ nav input::placeholder{
   opacity: 1;
   border-radius: 15px;
   position: relative;
+  box-shadow: -1px 0px 20px 0px #545151;
 }
 .description{
   position: absolute;
