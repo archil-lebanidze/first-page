@@ -593,7 +593,15 @@ form input:focus{
   width: 100%;
   height: 100%;
   position: absolute;
+  outline: none;
+  border:2px solid #FFE600CC;
   border-radius: 10px;
+}
+.mail-box input:hover{
+  border:4px solid #FFE600CC;
+}
+.mail-box input:focus{
+  border:4px solid #FFE600CC;
 }
 .mail-send{
   width: 17%;
